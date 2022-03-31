@@ -20,7 +20,7 @@ function App() {
         <Route path="/friends" element={<Friends />}></Route>
         <Route path="/friend/:friendId" element={<FriendDetail />}></Route>
         <Route path="/posts" element={<Posts></Posts>}>
-          <Route path=":postId" element={<PostDetail></PostDetail>}></Route>
+          <Route path=':postId' element={<PostDetail></PostDetail>}></Route>
         </Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="*" element={<NotFound />}></Route>
